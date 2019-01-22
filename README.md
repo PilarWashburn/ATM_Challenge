@@ -12,7 +12,7 @@ As a User
 In order to make a withdrawal
 The ATM needs to have sufficient funds.
 
-- Need to have funds
+- Need to have funds 
 - User can make withdrawal = withdraw method
 - ATM class
 

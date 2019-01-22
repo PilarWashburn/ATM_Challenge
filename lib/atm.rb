@@ -9,7 +9,6 @@ class ATM
         @funds -= amount
     end  
     
-end
 
     def withdraw(amount, account)
         case
