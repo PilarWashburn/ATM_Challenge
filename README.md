@@ -3,9 +3,9 @@ In order to work in a test driven way
 I want to unit test my
 
 = RSpec
-- initialize
-- set up
--functional
+- initialize :Done
+- set up :Done
+- functional :Done
 
 
 As a User
