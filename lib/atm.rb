@@ -1,12 +1,7 @@
 class ATM
-attr_accessor : funds
+    attr_accessor :funds
 
-def initialize
-@funds = 1000
+    def initialize
+        @funds = 1000
+    end
 end
-
-def withdraw(amount)
-#binding.pry
-@funds-=
-end
-
