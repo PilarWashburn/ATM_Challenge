@@ -12,9 +12,9 @@ As a User
 In order to make a withdrawal
 The ATM needs to have sufficient funds.
 
-- Need to have funds 
-- User can make withdrawal = withdraw method
-- ATM class
+- Need to have funds :Done
+- User can make withdrawal = withdraw method :Done
+- ATM class :Done
 
 As a User 
 In order to know if my withdrawal was successful or unsuccessful
