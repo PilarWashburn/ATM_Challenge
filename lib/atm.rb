@@ -44,7 +44,8 @@ class Atm
     def card_expired?(exp_date)
         Date.strptime(exp_date, '%m/%y') < Date.today
     end
+
+    def account_disabled?(disabled)
+        account = disabled
+    end
 end
-
-
-
