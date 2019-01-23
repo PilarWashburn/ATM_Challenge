@@ -47,7 +47,6 @@ describe Atm do
 
     it 'reject withdraw if account is disabled'  do
         expected_output = {status: false, message: 'account disabled', date: Date.today}
-        expect(subject.withdraw(100, '1234', account, account_status)).to eq expected_output
+        expect(subject.withdraw(100, '1234', account)).to eq expected_output
     end
-end
-
+end 
