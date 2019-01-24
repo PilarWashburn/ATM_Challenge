@@ -9,7 +9,7 @@ class Account
                 {status: false, message: 'wrong pin', date: Date.today}  
                     when card_expired?(account.exp_date)
                         {status: false, message: 'card expired', date: Date.today}
-                        when disabled_account?(account.account_status)
+                            when disabled_account?(account.account_status)
                         {status: false, message: 'disabled account', date: Date.today}
                     when insufficient_funds_in_account?(amount, pin_code, account)
                 {status: false, message: 'insufficient funds in account', date: Date.today}
@@ -38,6 +38,8 @@ class Account
     end
 
     def set_expire_date
-        Date.today.next_year(STANDARD_VALIDITY_YRS).strptime('%m/%y')
+        Date.today.next_year(Account::STANDARD_VALIDITY_YRS).strptime('%m/%y')
     end
+
+
 end
