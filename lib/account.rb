@@ -1,5 +1,6 @@
 class Account
     STANDARD_VALIDITY_YRS = 5
+    attr_accessor :balance, :pin_code, :account_status, :exp_date
 
     def initialize
         @account_status = active
