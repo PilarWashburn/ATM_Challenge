@@ -2,11 +2,9 @@ class Account
     STANDARD_VALIDITY_YRS = 5
 
     def initialize
-        @account_status = :active
-        @pin_code = 1234
-        @balance = 
-        @exp_date = '04/23'
+        @account_status = active
     end
+
     def account(pin_code, balance, account_status, exp_date)
 
     end
