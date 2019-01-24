@@ -1,18 +1,9 @@
-# require './lib/account.rb'
-# require 'date'
+require './lib/account.rb'
+require 'date'
 
 describe Account do
-    
-    it 'deactivates account using Instance method' do
-        subject.deactivate
-        expect(subject.account_status).to eq :deactivated
-    end
+    let(:person) {instance_double('Person', name: 'Thomas')}
 
-    it 'check length of a number' do
-        number = 1234
-        number_length = Math.log10(number).to_i + 1
-        expect(number_length).to eq 4
-    end
 
     it 'is expected to have a balance' do
         expected_balance => 0
