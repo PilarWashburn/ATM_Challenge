@@ -1,8 +1,10 @@
 require './lib/account.rb'
+#require './'
 
 describe Account do
 
     let(:account) {instance_double('Account', pin_code: '1234', exp_date: '04/23', account_status: :active)}
+    
 
     it 'reject withdraw if pin is wrong'  do
         expected_output = {status: false, message: 'wrong pin', date: Date.today}
@@ -31,10 +33,19 @@ describe Account do
         expect(subject.exp_date).to eq expected_date
     end
 
-    it 'check length of a number' do
+    it 'checks length of a number' do
         number = 1234
         number_length = Math.log10(number).to_i + 1
         expect(number_length).to eq 4
+    end
+
+    it 'is expected to have :active status on initialize' do
+        expect(subject.account_status).to eq :active
+    end
+
+    it 'deactivates account using Instance method' do
+        subject.deactivate
+        expect(subject.account_status).to eq :deactivated
     end
 
 end
