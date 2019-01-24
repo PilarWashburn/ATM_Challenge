@@ -4,7 +4,7 @@ class Account
     attr_accessor :balance, :pin_code, :account_status, :exp_date
 
     def initialize(account_status, balance, pin_code, exp_date)
-        @expire_date = expire_date
+        @expiry_date = '%m/%y'
         @account_status = account_status
         @balance = balance
         @pin_code = pin_code
