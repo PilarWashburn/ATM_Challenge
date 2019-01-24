@@ -4,7 +4,7 @@ class Account
     def initialize
         @account_status = :active
         @pin_code = 1234
-        @balance = nil #dont know.
+        @balance = 
         @exp_date = '04/23'
     end
     def account(pin_code, balance, account_status, exp_date)
@@ -12,7 +12,7 @@ class Account
     end
 
     def set_expire_date
-        Date.today.next_year(Account::STANDARD_VALIDITY_YRS).strftime('%m/%Y')
+        Date.today.next_year(STANDARD_VALIDITY_YRS).strftime('%m/%Y')
     end
 
 end
