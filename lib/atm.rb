@@ -48,20 +48,20 @@ class Atm
     end
 
     def disabled_account?(account_status)
-        account_status == :disabled 
+        account_status == :disabled
     end
 
     def add_bills(amount)
         denominations = [20, 10, 5]
-        bills = []
-        denominations.each do |bill|
-            while amount - bill >= 0
-                amount -= bill
-                bills << bill
+            bills = []
+                denominations.each do |bill|
+                    while amount - bill >= 0
+                    amount -= bill
+                    bills << bill
+                end
             end
-            end
-            bills
-        end
+        bills
+    end
 end 
 
 
