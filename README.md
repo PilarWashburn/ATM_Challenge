@@ -42,6 +42,9 @@ As an ATM operator
 In order to allow access to active customers             
 I want to allow withdrawals only from active accounts
 
+As a Customer
+In order to manage my funds
+I need to have a personal account
 
 
 
