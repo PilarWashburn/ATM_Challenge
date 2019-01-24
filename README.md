@@ -42,7 +42,7 @@ As an ATM operator
 In order to allow access to active customers             
 I want to allow withdrawals only from active accounts
 
-As an Bank Customer    
+As a Bank Customer    
 In order to withdraw funds in even amounts  
 I want to receive funds in 5, 10 & 20$ bills
 
