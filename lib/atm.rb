@@ -15,8 +15,8 @@ class Atm
             {status: false, message: 'wrong pin', date: Date.today}  
         when card_expired?(account.exp_date)
             {status: false, message: 'card expired', date: Date.today}
-        when disabled_account?(account_status)
-            {status: false, message: 'account disabled', date: Date.today}
+        when disabled_account?(account.account_status)
+            {status: false, message: 'disabled account', date: Date.today}
         else
             perform_transaction(amount, pin_code, account)
         end
@@ -48,7 +48,7 @@ class Atm
     end
 
     def disabled_account?(account_status)
-        account_status == :disabled
+        account_status == :disabled 
     end
 end 
 
