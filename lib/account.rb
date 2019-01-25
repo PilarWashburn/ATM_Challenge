@@ -24,16 +24,4 @@ class Account
     def set_owner(obj)
         obj == nil ?  missing_owner : @owner = obj
     end
-
-    def incorrect_pin?(pin_code, actual_pin)
-        pin_code != actual_pin
-    end
-
-    def insufficient_funds_in_account?(amount, pin_code, account)
-        amount > account.balance
-    end
-
-    
-        
-
 end

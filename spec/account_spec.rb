@@ -31,9 +31,6 @@ describe Account do
     it 'is expected to raise error if no owner is set' do
         expect { described_class.new }.to raise_error 'An Account owner is required'
     end
-
-    it 'is expected to have a balance greater than zero'  do
-        expect(subject.balance).to => 0
-    end    
+ 
 
 end
