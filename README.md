@@ -2,10 +2,10 @@
 In order to work in a test driven way
 I want to unit test my code with rspec.
 
-```ruby
-- initialize :Done
-- set up :Done
-- functional :Done
+```python
+1. initialize :Done
+2. set up :Done
+3. functional :Done
 ```
 
 
@@ -13,9 +13,6 @@ I want to unit test my code with rspec.
 In order to make a withdrawal
 The ATM needs to have sufficient funds.
 
-<!-- - Need to have funds :Done
-- User can make withdrawal = withdraw method :Done
-- ATM class :Done -->
 
 ## As a User 
 In order to know if my withdrawal was successful or unsuccessful
@@ -44,7 +41,7 @@ In order to allow access to active customers         I want to allow withdrawals
 
 ## As a Bank Customer    
 In order to withdraw funds in even amounts  
-I want to receive funds in 5, 10 & 20$ bills
+I want to receive funds in 5, 10 & 20$  bills
 
 
 
