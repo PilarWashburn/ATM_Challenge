@@ -31,5 +31,5 @@ describe Account do
 
     it 'is expected to raise an error if no owner is set' do
         expect {described_class.new}.to raise_error 'An account owner is required'
-    end
+    end 
 end
