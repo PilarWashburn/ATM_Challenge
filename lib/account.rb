@@ -9,6 +9,7 @@ class Account
         @account_status = :active
         @pin_code = rand(1000..9999)
         set_owner(attrs[:owner])
+        @balance = 0
     end
 
     private
