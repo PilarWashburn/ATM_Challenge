@@ -4,25 +4,24 @@ class Account
     attr_accessor :balance, :pin_code, :account_status, :exp_date
 
     def initialize(account_status, balance, pin_code, exp_date)
-        @expiry_date = '%m/%y'
-        @account_status = :active
+        @expiry_date = set_expire_date
+        @account_status = 
         @balance = 1000
-        @pin_code = 1234
-        #set_owner
+        @pin_code = rand(1000..9999)
     end
 
     private
 
     def set_expire_date
-        Date.today.next_year(STANDARD_VALIDITY_YRS).strftime('%m/%Y')
+        Date.today.next_year(STANDARD_VALIDITY_YRS).strftime('%m/%y')
     end
 
     def deactivate
         @account_status = :deactivated
     end
 
-    def set_owner(obj)
-        obj == nil ?  missing_owner : @owner = obj
-    end
+    # def set_owner(obj)
+    #     obj == nil ?  missing_owner : @owner = obj
+    # end
 
 end
