@@ -7,7 +7,7 @@ class Account
         @expiry_date = '%m/%y'
         @account_status = :active
         @balance = 1000
-        @pin_code = 1234
+        @pin_code = rand(1000..9999)
         @set_owner = owner
     end
 
@@ -32,7 +32,7 @@ class Account
     def insufficient_funds_in_account?(amount, pin_code, account)
         amount > account.balance
     end
-    
+
     
         
 
