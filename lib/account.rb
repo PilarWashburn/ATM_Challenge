@@ -6,7 +6,7 @@ class Account
 
     def initialize
         @exp_date = set_exp_date
-        #@account_status = :active
+        @account_status = :active
         #@balance = account.balance
         @pin_code = rand(1000..9999)
     end
@@ -20,4 +20,9 @@ class Account
     def set_exp_date
         Date.today.next_year(STANDARD_VALIDITY_YRS).strftime('%m/%y')
     end
+
+    def self.deactivate(account)
+        account.account_status = :deactivated
+    end
+
 end
