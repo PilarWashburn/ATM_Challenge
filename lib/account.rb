@@ -8,7 +8,7 @@ class Account
         @account_status = :active
         @balance = 1000
         @pin_code = 1234
-        set_owner =
+        #set_owner
     end
 
     private
