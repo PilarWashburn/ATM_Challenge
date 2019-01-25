@@ -2,7 +2,7 @@ require './lib/account.rb'
 require 'date'
 
 describe Account do
-    let(:person) {instance_double('Person', name: 'Customer')}
+    let(:person) {instance_double('Person', name: 'Kalle')}
     subject {described_class.new({owner: person})}
 
     it 'check length of a number' do
@@ -30,7 +30,6 @@ describe Account do
     end
 
     it 'is expected to raise an error if no owner is set' do
-        expect {described_class.new}.to raise_error 'An Account owner is required'
+        expect {described_class.new}.to raise_error 'An account owner is required'
     end
-
 end
